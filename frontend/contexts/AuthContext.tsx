@@ -11,6 +11,8 @@ interface User {
 interface AuthContextType {
   user: User | null;
   token: string | null;
+  setToken: (token: string | null) => void;
+  setUser: (user: User | null) => void;
   login: (username: string, password: string) => Promise<void>;
   register: (username: string, email: string, password: string) => Promise<void>;
   googleLogin: (credential: string) => Promise<void>;
@@ -103,6 +105,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       value={{
         user,
         token,
+        setToken,
+        setUser,
         login,
         register,
         googleLogin,
