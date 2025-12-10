@@ -168,15 +168,15 @@ export default function AIGuidancePage() {
                       <ReactMarkdown 
                         className="prose prose-invert prose-sm sm:prose-base max-w-none text-xs sm:text-sm leading-relaxed"
                         components={{
-                          a: ({node, ...props}) => <a {...props} className="text-sky-400 hover:text-sky-300 underline decoration-1 underline-offset-2 transition-colors" target="_blank" rel="noopener noreferrer" />,
-                          code: ({node, ...props}) => <code {...props} className="bg-black/30 px-1.5 py-0.5 rounded text-sky-300 text-xs" />,
-                          pre: ({node, ...props}) => <pre {...props} className="bg-black/30 p-2 sm:p-3 rounded-lg overflow-x-auto text-xs" />,
-                          ul: ({node, ...props}) => <ul {...props} className="space-y-1 my-2" />,
-                          ol: ({node, ...props}) => <ol {...props} className="space-y-1 my-2" />,
-                          li: ({node, ...props}) => <li {...props} className="ml-4" />,
-                          h1: ({node, ...props}) => <h1 {...props} className="text-lg sm:text-xl font-bold mt-4 mb-2" />,
-                          h2: ({node, ...props}) => <h2 {...props} className="text-base sm:text-lg font-bold mt-3 mb-2" />,
-                          h3: ({node, ...props}) => <h3 {...props} className="text-sm sm:text-base font-bold mt-2 mb-1" />,
+                          a: ({node, ...props}: any) => <a {...props} className="text-sky-400 hover:text-sky-300 underline decoration-1 underline-offset-2 transition-colors" target="_blank" rel="noopener noreferrer" />,
+                          code: ({node, ...props}: any) => <code {...props} className="bg-black/30 px-1.5 py-0.5 rounded text-sky-300 text-xs" />,
+                          pre: ({node, ...props}: any) => <pre {...props} className="bg-black/30 p-2 sm:p-3 rounded-lg overflow-x-auto text-xs" />,
+                          ul: ({node, ...props}: any) => <ul {...props} className="space-y-1 my-2" />,
+                          ol: ({node, ...props}: any) => <ol {...props} className="space-y-1 my-2" />,
+                          li: ({node, ...props}: any) => <li {...props} className="ml-4" />,
+                          h1: ({node, ...props}: any) => <h1 {...props} className="text-lg sm:text-xl font-bold mt-4 mb-2" />,
+                          h2: ({node, ...props}: any) => <h2 {...props} className="text-base sm:text-lg font-bold mt-3 mb-2" />,
+                          h3: ({node, ...props}: any) => <h3 {...props} className="text-sm sm:text-base font-bold mt-2 mb-1" />,
                         }}
                       >
                         {message.content}
